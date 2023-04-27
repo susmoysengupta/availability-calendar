@@ -1,0 +1,7 @@
+*
+!public/
+!.gitignore
+!languages.json
+!timezones.json
+!embed-code.js
+!languagesWithCountryCode.json

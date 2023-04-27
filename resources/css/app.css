@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+
+.test {
+    @apply flex items-center justify-center w-6 h-6 text-sm font-medium text-gray-600 bg-green-200 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:bg-indigo-500 hover:bg-indigo-500;
+}
+
+.input-form {
+    @apply text-sm border-gray-300 rounded-md shadow-sm dark:bg-gray-700 dark:border-gray-600 focus:border-purple-400 focus:ring focus:ring-purple-200 focus:ring-opacity-50 focus-within:text-purple-600 dark:text-gray-300 form-input;
+}
+
+.link {
+    @apply p-1 rounded focus:outline-none focus:ring-2 focus:ring-offset-1 ring-offset-transparent focus:ring-pink-500;
+}
+
+.link-underline {
+    @apply font-semibold text-purple-600 underline dark:text-purple-400 underline-offset-2 hover:text-purple-700 dark:hover:text-purple-500 active:text-purple-800 dark:active:text-purple-600;
+}
+
+.btn {
+    @apply inline-flex items-center gap-2 px-4 py-2 text-sm font-medium leading-5 text-black transition-colors duration-150 border border-transparent rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 dark:focus:ring-offset-gray-800;
+}
+
+.btn-secondary {
+    @apply text-white bg-purple-600 hover:bg-purple-700 focus:ring-purple-500 active:bg-purple-700;
+}
+
+.btn-danger {
+    @apply text-white bg-red-600 hover:bg-red-700 focus:ring-red-500 active:bg-red-700;
+}
+
+.clip-right {
+    -webkit-clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+}
+
+.clip-left {
+    -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+    clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+}
+
+@tailwind utilities;
